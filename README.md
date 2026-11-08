@@ -2,8 +2,8 @@
 
 [![Release](https://img.shields.io/docker/v/jcpd/dknr-teleinfo?sort=semver)](https://img.shields.io/docker/v/jcpd/dknr-teleinfo?sort=semver)
 [![Pull](https://img.shields.io/docker/pulls/jcpd/dknr-teleinfo)](https://img.shields.io/docker/pulls/jcpd/dknr-teleinfo)
-[![Issue](https://img.shields.io/github/issues/jcdenis/dknr-teleinfo)](https://img.shields.io/github/issues/jcdenis/dknr-teleinfo)
-[![License](https://img.shields.io/github/license/jcdenis/dknr-teleinfo)](https://github.com/JcDenis/dknr-teleinfo/blob/master/LICENSE)
+[![Issue](https://img.shields.io/github/issues/dknr-domotic/dknr-teleinfo)](https://img.shields.io/github/issues/dknr-domotic/dknr-teleinfo)
+[![License](https://img.shields.io/github/license/dknr-domotic/dknr-teleinfo)](https://github.com/dknr-domotic/dknr-teleinfo/blob/master/LICENSE)
 
 
 ## A propos
@@ -12,7 +12,7 @@
 
 Il permet de collecter les informations transmises par la sortie Téléinformation Client (TIC), puis de les rendre disponibles pour leur consultation, leur traitement ou leur intégration dans un système domotique.
 
-[![Dashboard Screenshot](https://github.com/JcDenis/dknr-teleinfo/blob/master/dknr-teleinfo_screenshot.png)](https://github.com/JcDenis/dknr-teleinfo/blob/master/dknr-teleinfo_screenshot.png)
+[![Dashboard Screenshot](https://github.com/dknr-domotic/dknr-teleinfo/blob/master/dknr-teleinfo_screenshot.png)](https://github.com/dknr-domotic/dknr-teleinfo/blob/master/dknr-teleinfo_screenshot.png)
 
 
 ## Fonctionnalités
@@ -76,11 +76,11 @@ Quelques remarques :
 
 ## Contribuer
 
-Ce projet est **open-source**, vous pouvez participer en créant des [tickets](https://github.com/JcDenis/dknr-teleinfo/issues) ou en proposant de [requêtes](https://github.com/JcDenis/dknr-teleinfo/pulls) sur le dépôt github du projet.
+Ce projet est **open-source**, vous pouvez participer en créant des [tickets](https://github.com/dknr-domotic/dknr-teleinfo/issues) ou en proposant de [requêtes](https://github.com/dknr-domotic/dknr-teleinfo/pulls) sur le dépôt github du projet.
 
 
 ## Voir aussi
 
-- [DKNR Teleinfo](https://github.com/JcDenis/dknr-teleinfo)
-- [DKNR APSystems](https://github.com/JcDenis/dknr-apsystems)
-- [DKNR Daikin](https://github.com/JcDenis/dknr-daikin)
+- [DKNR Teleinfo](https://github.com/dknr-domotic/dknr-teleinfo)
+- [DKNR APSystems](https://github.com/dknr-domotic/dknr-apsystems)
+- [DKNR Daikin](https://github.com/dknr-domotic/dknr-daikin)

@@ -18,7 +18,7 @@ RUN usermod -aG dialout node-red
 ENV DKNR_USERNAME=admin \
 	DKNR_PASSWORD=admin \
 	DKNR_SECRET=dkteleinfo \
-    DKNR_REPOSITORY=https://github.com/JcDenis/dknr-teleinfo \
+    DKNR_REPOSITORY=https://github.com/dknr-domotic/dknr-teleinfo \
     NODE_RED_ENABLE_PROJECTS=true \
     DKNR_INFLUX_URL=http://dknr_teleinfo_influxdb:8086 \
     DKNR_INFLUX_TOKEN=dknr-teleinfo-influxdb-token \
@@ -28,7 +28,7 @@ ENV DKNR_USERNAME=admin \
 
 # Image label
 LABEL org.opencontainers.image.authors="Jean-Christian Paul Denis" \
-      org.opencontainers.image.source="https://github.com/JcDenis/dknr-teleinfo" \
+      org.opencontainers.image.source="https://github.com/dknr-domotic/dknr-teleinfo" \
       org.opencontainers.image.title="DKNR Teleinfo" \
       org.opencontainers.image.description="Teleinfo Parser with web UI and MQTT" \
       org.opencontainers.image.licenses="AGPL-3.0"
