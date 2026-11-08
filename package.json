@@ -1,7 +1,7 @@
 {
     "name": "dknr-teleinfo",
     "description": "DKNR Teleinfo",
-    "version": "1.0",
+    "version": "1.1",
     "dependencies": {
         "@flowfuse/node-red-dashboard": "1.36.0",
         "node-red-node-serialport": "2.0.3"
