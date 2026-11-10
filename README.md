@@ -10,6 +10,8 @@
 
 **dknr-teleinfo** est un projet consacré à la récupération et à l'exploitation des données de téléinformation d'un compteur électrique.
 
+La documentation détaillée est sur [dknr-domotic.github.io](https://dknr-domotic.github.io/sources/teleinfo/).
+
 Il permet de collecter les informations transmises par la sortie Téléinformation Client (TIC), puis de les rendre disponibles pour leur consultation, leur traitement ou leur intégration dans un système domotique.
 
 [![Dashboard Screenshot detail](https://github.com/dknr-domotic/dknr-teleinfo/blob/master/sshot/dknr-teleinfo_screenshot.png)](https://github.com/dknr-domotic/dknr-teleinfo/blob/master/sshot/dknr-teleinfo_screenshot.png)
