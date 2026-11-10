@@ -75,6 +75,22 @@ Quelques remarques :
 * Pour utiliser une base InfluxDB 2 existante, renseignez ces quatre variables pour le conteneur dknr_teleinfo ; le conteneur InfluxDB du docker-compose (et le `depends_on` qui y fait référence) peut alors être retiré.
 
 
+### Surveillance de la lecture
+
+Après une microcoupure ou un incident sur la machine hôte (par exemple une VM Proxmox dont le port USB est partagé), la lecture de la TIC peut rester bloquée ou ne donner que des trames illisibles. dknr-teleinfo surveille donc chaque port série :
+
+* le port passe **en défaut** après **5 trames mal décodées** de suite, ou **60 secondes sans trame valide** sur un port qui a déjà fonctionné (même après un redémarrage du conteneur) ;
+* en défaut, le port est **fermé puis rouvert** automatiquement, comme si le câble USB était débranché puis rebranché. Sans retour à la normale, la réouverture est retentée après 1, 2, 4 et 8 minutes, puis toutes les 10 minutes ;
+* le défaut est levé après **3 trames valides** de suite.
+
+L'état est publié sur MQTT avec l'entité **FAULT** (`dknr/get/teleinfo/<ADCO>/FAULT`) : `1` en défaut, `0` quand la lecture est normale. Elle est déclarée en discovery DKNR (type binaire) et Home Assistant (binary_sensor de type « problem ») ; vous pouvez vous en servir comme alerte dans votre domotique.
+
+Si le défaut persiste malgré les réouvertures, la clé USB n'est probablement plus visible sous le même nom, par exemple quand elle revient en `/dev/ttyUSB1` sur la machine hôte. Il faut alors redémarrer le conteneur, ou débrancher et rebrancher la clé. Quelques conseils pour limiter ce cas :
+
+* sous Proxmox, partagez la clé avec la VM **par son identifiant (vendor/product)** plutôt que par son port USB ;
+* sur la machine hôte, indiquez de préférence le chemin stable `/dev/serial/by-id/...` de la clé dans le docker-compose, par exemple `- /dev/serial/by-id/usb-xxxx:/dev/ttyUSB0`.
+
+
 ## A faire
 
 * **Support triphasé** (UI).

@@ -261,7 +261,8 @@
             "c937040cbfaaac18",
             "2845feb882489a18",
             "8895034b18c01f36",
-            "644d1057cd0b9909"
+            "644d1057cd0b9909",
+            "b1d0c0de7a5e0007"
         ],
         "x": 94,
         "y": 279,
@@ -826,7 +827,8 @@
         "links": [
             "11a311cff80fcfb0",
             "f4b715c1321c6848",
-            "6326830faa9d7246"
+            "6326830faa9d7246",
+            "b1d0c0de7a5e0005"
         ],
         "x": 145,
         "y": 500,
@@ -1709,7 +1711,7 @@
         "z": "3f247e8940433129",
         "g": "f18e924e31835e04",
         "name": "custom - describe",
-        "func": "msg.payload.project = 'dknr-teleinfo';\n\nmsg.payload.hmi = {\n    'detail': 'Surveiller',\n    'history': 'Historique',\n    'add': 'Ajouter',\n    'mqtt': 'Configurer'\n};\n\nmsg.payload.optarif = {\n    'BASE': 'Option Base',\n    'HC..': 'Option Heures Creuses',\n    'EJP.': 'Option Effacement Jour de Pointe',\n    'BBR.': 'Option Tempo'\n};\n\nmsg.payload.ptec = {\n    'TH..': \"Toutes les Heures\",\n    'HC..': \"Heures Creuses\",\n    'HP..': \"Heures Pleines\",\n    'HN..': \"Heures Normales\",\n    'PM..': \"Heures de Pointe Mobile\",\n    'HCJB': \"Heures Creuses Jours Bleus\",\n    'HCJW': \"Heures Creuses Jours Blancs\",\n    'HCJR': \"Heures Creuses Jours Rouges\",\n    'HPJB': \"Heures Pleines Jours Bleus\",\n    'HPJW': \"Heures Pleines Jours Blancs\",\n    'HPJR': \"Heures Pleines Jours Rouges\"\n};\n\nmsg.payload.demain = {\n    '----': 'Inconnue',\n    'BLEU': 'Jour bleu',\n    'BLAN': 'Jour blanc',\n    'ROUG': 'Jour rouge'\n};\n\n// Translation of options labels (french is the reference language)\nmsg.payload.translate = {\n    'en': {\n        'Option Base': 'Base option',\n        'Option Heures Creuses': 'Off-peak hours option',\n        'Option Effacement Jour de Pointe': 'Peak day curtailment option (EJP)',\n        'Option Tempo': 'Tempo option',\n        'Toutes les Heures': 'All hours',\n        'Heures Creuses': 'Off-peak hours',\n        'Heures Pleines': 'Peak hours',\n        'Heures Normales': 'Normal hours',\n        'Heures de Pointe Mobile': 'Mobile peak hours',\n        'Heures Creuses Jours Bleus': 'Off-peak hours blue days',\n        'Heures Creuses Jours Blancs': 'Off-peak hours white days',\n        'Heures Creuses Jours Rouges': 'Off-peak hours red days',\n        'Heures Pleines Jours Bleus': 'Peak hours blue days',\n        'Heures Pleines Jours Blancs': 'Peak hours white days',\n        'Heures Pleines Jours Rouges': 'Peak hours red days',\n        'Inconnue': 'Unknown',\n        'Jour bleu': 'Blue day',\n        'Jour blanc': 'White day',\n        'Jour rouge': 'Red day'\n    }\n};\n\nmsg.payload.names = {\n    'ADCO': 'Adresse du compteur',\n    'OPTARIF': 'Option tarifaire',\n    'ISOUSC': 'Intensité souscrite',\n    'BASE': 'Index de base',\n    'HCHC': 'Heures creuses',\n    'HCHP': 'Heures pleines',\n    'EJPHN': 'Heures normales',\n    'EJPHPM': 'Heures de pointe mobile',\n    'BBRHCJB': 'Heures creuses jours bleus',\n    'BBRHPJB': 'Heures pleines jours bleus',\n    'BBRHCJW': 'Heures creuses jours blancs',\n    'BBRHPJW': 'Heures pleines jours blancs',\n    'BBRHCJR': 'Heures creuses jours rouges',\n    'BBRHPJR': 'Heures pleines jours rouges',\n    'PEJP': 'Préavis début EJP',\n    'PTEC': 'Période tarifaire en cours',\n    'DEMAIN': 'Couleur du lendemain',\n    'IINST': 'Intensité instantanée',\n    'IINST1': 'Intensité instantanée phase 1',\n    'IINST2': 'Intensité instantanée phase 2',\n    'IINST3': 'Intensité instantanée phase 3',\n    'IMAX': 'Intensité maximum',\n    'IMAX1': 'Intensité maximum phase 1',\n    'IMAX2': 'Intensité maximum phase 2',\n    'IMAX3': 'Intensité maximum phase 3',\n    'ADPS': 'Dépassement de puissance', // monophasé\n    'ADIR1': \"Dépassement d'intensité phase 1\",\n    'ADIR2': \"Dépassement d'intensité phase 2\",\n    'ADIR3': \"Dépassement d'intensité phase 3\",\n    'PAPP': 'Puissance apparente',\n    'PMAX': 'Puissance maximum', // triphasé j-1\n    'PPOT': 'Présence des potentiels',\n    'HHPHC': 'Groupe horaire',\n    'HCHT': 'Heures totales' // custom\n};\n\nmsg.payload.units = {\n    'ADCO': '',\n    'OPTARIF': '',\n    'ISOUSC': 'A',\n    'BASE': 'Wh',\n    'HCHC': 'Wh',\n    'HCHP': 'Wh',\n    'EJPHN': 'Wh',\n    'EJPHPM': 'Wh',\n    'BBRHCJB': 'Wh',\n    'BBRHPJB': 'Wh',\n    'BBRHCJW': 'Wh',\n    'BBRHPJW': 'Wh',\n    'BBRHCJR': 'Wh',\n    'BBRHPJR': 'Wh',\n    'PEJP': 'min',\n    'PTEC': '',\n    'DEMAIN': '',\n    'IINST': 'A',\n    'IINST1': 'A',\n    'IINST2': 'A',\n    'IINST3': 'A',\n    'IMAX': 'A',\n    'IMAX1': 'A',\n    'IMAX2': 'A',\n    'IMAX3': 'A',\n    'ADPS': '',\n    'ADIR1': '',\n    'ADIR2': '',\n    'ADIR3': '',\n    'PAPP': 'W', // VA but home assistant requires W\n    'PMAX': 'W',\n    'PPOT': '',\n    'HHPHC': '',\n    'HCHT': 'Wh' // custom\n};\n\nmsg.payload.units = {\n    'ADCO': '',\n    'OPTARIF': '',\n    'ISOUSC': 'A',\n    'BASE': 'Wh',\n    'HCHC': 'Wh',\n    'HCHP': 'Wh',\n    'EJPHN': 'Wh',\n    'EJPHPM': 'Wh',\n    'BBRHCJB': 'Wh',\n    'BBRHPJB': 'Wh',\n    'BBRHCJW': 'Wh',\n    'BBRHPJW': 'Wh',\n    'BBRHCJR': 'Wh',\n    'BBRHPJR': 'Wh',\n    'PEJP': 'min',\n    'PTEC': '',\n    'DEMAIN': '',\n    'IINST': 'A',\n    'IINST1': 'A',\n    'IINST2': 'A',\n    'IINST3': 'A',\n    'IMAX': 'A',\n    'IMAX1': 'A',\n    'IMAX2': 'A',\n    'IMAX3': 'A',\n    'ADPS': '',\n    'ADIR1': '',\n    'ADIR2': '',\n    'ADIR3': '',\n    'PAPP': 'W', // VA but home assistant requires W\n    'PMAX': 'W',\n    'PPOT': '',\n    'HHPHC': '',\n    'HCHT': 'Wh' // custom\n};\n\nmsg.payload.type = {\n    'ADCO': 'text',\n    'OPTARIF': 'text',\n    'ISOUSC': 'text',\n    'BASE': 'sensor',\n    'HCHC': 'sensor',\n    'HCHP': 'sensor',\n    'EJPHN': 'sensor',\n    'EJPHPM': 'sensor',\n    'BBRHCJB': 'sensor',\n    'BBRHPJB': 'sensor',\n    'BBRHCJW': 'sensor',\n    'BBRHPJW': 'sensor',\n    'BBRHCJR': 'sensor',\n    'BBRHPJR': 'sensor',\n    'PEJP': 'sensor',\n    'PTEC': 'text',\n    'DEMAIN': 'text',\n    'IINST': 'sensor',\n    'IINST1': 'sensor',\n    'IINST2': 'sensor',\n    'IINST3': 'sensor',\n    'IMAX': 'sensor',\n    'IMAX1': 'sensor',\n    'IMAX2': 'sensor',\n    'IMAX3': 'sensor',\n    'ADPS': 'text',\n    'ADIR1': 'text',\n    'ADIR2': 'text',\n    'ADIR3': 'text',\n    'PAPP': 'sensor',\n    'PMAX': 'sensor',\n    'PPOT': 'text',\n    'HHPHC': 'text',\n    'HCHT': 'sensor' // custom\n};\n\nmsg.payload.discovery_state_class = {\n    'ADCO': '',\n    'OPTARIF': '',\n    'ISOUSC': '',\n    'BASE': 'total_increasing',\n    'HCHC': 'total_increasing',\n    'HCHP': 'total_increasing',\n    'EJPHN': 'total_increasing',\n    'EJPHPM': 'total_increasing',\n    'BBRHCJB': 'total_increasing',\n    'BBRHPJB': 'total_increasing',\n    'BBRHCJW': 'total_increasing',\n    'BBRHPJW': 'total_increasing',\n    'BBRHCJR': 'total_increasing',\n    'BBRHPJR': 'total_increasing',\n    'PEJP': '',\n    'PTEC': '',\n    'DEMAIN': '',\n    'IINST': 'measurement',\n    'IINST1': 'measurement',\n    'IINST2': 'measurement',\n    'IINST3': 'measurement',\n    'IMAX': '',\n    'IMAX1': '',\n    'IMAX2': '',\n    'IMAX3': '',\n    'ADPS': '',\n    'ADIR1': '',\n    'ADIR2': '',\n    'ADIR3': '',\n    'PAPP': 'measurement',\n    'PMAX': '',\n    'PPOT': '',\n    'HHPHC': '',\n    'HCHT': 'total_increasing' // custom\n};\n\nmsg.payload.discovery_device_class = {\n    'ADCO': '',\n    'OPTARIF': '',\n    'ISOUSC': 'current',\n    'BASE': 'energy',\n    'HCHC': 'energy',\n    'HCHP': 'energy',\n    'EJPHN': 'energy',\n    'EJPHPM': 'energy',\n    'BBRHCJB': 'energy',\n    'BBRHPJB': 'energy',\n    'BBRHCJW': 'energy',\n    'BBRHPJW': 'energy',\n    'BBRHCJR': 'energy',\n    'BBRHPJR': 'energy',\n    'PEJP': '',\n    'PTEC': '',\n    'DEMAIN': '',\n    'IINST': 'current',\n    'IINST1': 'current',\n    'IINST2': 'current',\n    'IINST3': 'current',\n    'IMAX': 'current',\n    'IMAX1': 'current',\n    'IMAX2': 'current',\n    'IMAX3': 'current',\n    'ADPS': 'current',\n    'ADIR1': 'current',\n    'ADIR2': 'current',\n    'ADIR3': 'current',\n    'PAPP': 'power',\n    'PMAX': 'power',\n    'PPOT': '',\n    'HHPHC': '',\n    'HCHT': 'energy' // custom\n};\n\nmsg.payload.discovery_value_template = {\n    'ADCO': \"{% if 'ADCO' in value_json %}{{ value_json.ADCO.raw }}{% endif %}\",\n    'OPTARIF': \"{% if 'OPTARIF' in value_json %}{{ value_json.OPTARIF.value }}{% endif %}\",\n    'ISOUSC': \"{% if 'ISOUSC' in value_json %}{{ value_json.ISOUSC.value }}{% endif %}\",\n    'BASE': \"{% if 'BASE' in value_json %}{{ value_json.BASE.value }}{% endif %}\",\n    'HCHC': \"{% if 'HCHC' in value_json %}{{ value_json.HCHC.value }}{% endif %}\",\n    'HCHP': \"{% if 'HCHP' in value_json %}{{ value_json.HCHP.value }}{% endif %}\",\n    'EJPHN': \"{% if 'EJPHN' in value_json %}{{ value_json.EJPHN.value }}{% endif %}\",\n    'EJPHPM': \"{% if 'EJPHPM' in value_json %}{{ value_json.EJPHPM.value }}{% endif %}\",\n    'BBRHCJB': \"{% if 'BBRHCJB' in value_json %}{{ value_json.BBRHCJB.value }}{% endif %}\",\n    'BBRHPJB': \"{% if 'BBRHPJB' in value_json %}{{ value_json.BBRHPJB.value }}{% endif %}\",\n    'BBRHCJW': \"{% if 'BBRHCJW' in value_json %}{{ value_json.BBRHCJW.value }}{% endif %}\",\n    'BBRHPJW': \"{% if 'BBRHPJW' in value_json %}{{ value_json.BBRHPJW.value }}{% endif %}\",\n    'BBRHCJR': \"{% if 'BBRHCJR' in value_json %}{{ value_json.BBRHCJR.value }}{% endif %}\",\n    'BBRHPJR': \"{% if 'BBRHPJR' in value_json %}{{ value_json.BBRHPJR.value }}{% endif %}\",\n    'PEJP': \"{% if 'PEJP' in value_json %}{{ value_json.PEJP.value }}{% endif %}\",\n    'PTEC': \"{% if 'PTEC' in value_json %}{{ value_json.PTEC.value }}{% endif %}\",\n    'DEMAIN': \"{% if 'DEMAIN' in value_json %}{{ value_json.DEMAIN.value }}{% endif %}\",\n    'IINST': \"{% if 'IINST' in value_json %}{{ value_json.IINST.value }}{% endif %}\",\n    'IINST1': \"{% if 'IINST1' in value_json %}{{ value_json.IINST1.value }}{% endif %}\",\n    'IINST2': \"{% if 'IINST2' in value_json %}{{ value_json.IINST2.value }}{% endif %}\",\n    'IINST3': \"{% if 'IINST3' in value_json %}{{ value_json.IINST3.value }}{% endif %}\",\n    'IMAX': \"{% if 'IMAX' in value_json %}{{ value_json.IMAX.value }}{% endif %}\",\n    'IMAX1': \"{% if 'IMAX1' in value_json %}{{ value_json.IMAX1.value }}{% endif %}\",\n    'IMAX2': \"{% if 'IMAX2' in value_json %}{{ value_json.IMAX2.value }}{% endif %}\",\n    'IMAX3': \"{% if 'IMAX3' in value_json %}{{ value_json.IMAX3.value }}{% endif %}\",\n    'ADPS': \"{% if 'ADPS' in value_json %}{{ value_json.ADPS.value }}{% endif %}\",\n    'ADIR1': \"{% if 'ADIR1' in value_json %}{{ value_json.ADIR1.value }}{% endif %}\",\n    'ADIR2': \"{% if 'ADIR2' in value_json %}{{ value_json.ADIR2.value }}{% endif %}\",\n    'ADIR3': \"{% if 'ADIR3' in value_json %}{{ value_json.ADIR3.value }}{% endif %}\",\n    'PAPP': \"{% if 'PAPP' in value_json %}{{ value_json.PAPP.value }}{% endif %}\",\n    'PMAX': \"{% if 'PMAX' in value_json %}{{ value_json.PMAX.value }}{% endif %}\",\n    'PPOT': \"{% if 'PPOT' in value_json %}{{ value_json.PPOT.raw }}{% endif %}\",\n    'HHPHC': \"{% if 'HHPHC' in value_json %}{{ value_json.HHPHC.value }}{% endif %}\",\n    'HCHT': \"{% if 'HCHT' in value_json %}{{ value_json.HCHT.value }}{% endif %}\" // custom\n};\n\nreturn msg;",
+        "func": "msg.payload.project = 'dknr-teleinfo';\n\nmsg.payload.hmi = {\n    'detail': 'Surveiller',\n    'history': 'Historique',\n    'add': 'Ajouter',\n    'mqtt': 'Configurer'\n};\n\nmsg.payload.optarif = {\n    'BASE': 'Option Base',\n    'HC..': 'Option Heures Creuses',\n    'EJP.': 'Option Effacement Jour de Pointe',\n    'BBR.': 'Option Tempo'\n};\n\nmsg.payload.ptec = {\n    'TH..': \"Toutes les Heures\",\n    'HC..': \"Heures Creuses\",\n    'HP..': \"Heures Pleines\",\n    'HN..': \"Heures Normales\",\n    'PM..': \"Heures de Pointe Mobile\",\n    'HCJB': \"Heures Creuses Jours Bleus\",\n    'HCJW': \"Heures Creuses Jours Blancs\",\n    'HCJR': \"Heures Creuses Jours Rouges\",\n    'HPJB': \"Heures Pleines Jours Bleus\",\n    'HPJW': \"Heures Pleines Jours Blancs\",\n    'HPJR': \"Heures Pleines Jours Rouges\"\n};\n\nmsg.payload.demain = {\n    '----': 'Inconnue',\n    'BLEU': 'Jour bleu',\n    'BLAN': 'Jour blanc',\n    'ROUG': 'Jour rouge'\n};\n\n// Translation of options labels (french is the reference language)\nmsg.payload.translate = {\n    'en': {\n        'Option Base': 'Base option',\n        'Option Heures Creuses': 'Off-peak hours option',\n        'Option Effacement Jour de Pointe': 'Peak day curtailment option (EJP)',\n        'Option Tempo': 'Tempo option',\n        'Toutes les Heures': 'All hours',\n        'Heures Creuses': 'Off-peak hours',\n        'Heures Pleines': 'Peak hours',\n        'Heures Normales': 'Normal hours',\n        'Heures de Pointe Mobile': 'Mobile peak hours',\n        'Heures Creuses Jours Bleus': 'Off-peak hours blue days',\n        'Heures Creuses Jours Blancs': 'Off-peak hours white days',\n        'Heures Creuses Jours Rouges': 'Off-peak hours red days',\n        'Heures Pleines Jours Bleus': 'Peak hours blue days',\n        'Heures Pleines Jours Blancs': 'Peak hours white days',\n        'Heures Pleines Jours Rouges': 'Peak hours red days',\n        'Inconnue': 'Unknown',\n        'Jour bleu': 'Blue day',\n        'Jour blanc': 'White day',\n        'Jour rouge': 'Red day'\n    }\n};\n\nmsg.payload.names = {\n    'ADCO': 'Adresse du compteur',\n    'OPTARIF': 'Option tarifaire',\n    'ISOUSC': 'Intensité souscrite',\n    'BASE': 'Index de base',\n    'HCHC': 'Heures creuses',\n    'HCHP': 'Heures pleines',\n    'EJPHN': 'Heures normales',\n    'EJPHPM': 'Heures de pointe mobile',\n    'BBRHCJB': 'Heures creuses jours bleus',\n    'BBRHPJB': 'Heures pleines jours bleus',\n    'BBRHCJW': 'Heures creuses jours blancs',\n    'BBRHPJW': 'Heures pleines jours blancs',\n    'BBRHCJR': 'Heures creuses jours rouges',\n    'BBRHPJR': 'Heures pleines jours rouges',\n    'PEJP': 'Préavis début EJP',\n    'PTEC': 'Période tarifaire en cours',\n    'DEMAIN': 'Couleur du lendemain',\n    'IINST': 'Intensité instantanée',\n    'IINST1': 'Intensité instantanée phase 1',\n    'IINST2': 'Intensité instantanée phase 2',\n    'IINST3': 'Intensité instantanée phase 3',\n    'IMAX': 'Intensité maximum',\n    'IMAX1': 'Intensité maximum phase 1',\n    'IMAX2': 'Intensité maximum phase 2',\n    'IMAX3': 'Intensité maximum phase 3',\n    'ADPS': 'Dépassement de puissance', // monophasé\n    'ADIR1': \"Dépassement d'intensité phase 1\",\n    'ADIR2': \"Dépassement d'intensité phase 2\",\n    'ADIR3': \"Dépassement d'intensité phase 3\",\n    'PAPP': 'Puissance apparente',\n    'PMAX': 'Puissance maximum', // triphasé j-1\n    'PPOT': 'Présence des potentiels',\n    'HHPHC': 'Groupe horaire',\n    'HCHT': 'Heures totales', // custom\n    'FAULT': 'Défaut de lecture' // custom, watchdog\n};\n\nmsg.payload.units = {\n    'ADCO': '',\n    'OPTARIF': '',\n    'ISOUSC': 'A',\n    'BASE': 'Wh',\n    'HCHC': 'Wh',\n    'HCHP': 'Wh',\n    'EJPHN': 'Wh',\n    'EJPHPM': 'Wh',\n    'BBRHCJB': 'Wh',\n    'BBRHPJB': 'Wh',\n    'BBRHCJW': 'Wh',\n    'BBRHPJW': 'Wh',\n    'BBRHCJR': 'Wh',\n    'BBRHPJR': 'Wh',\n    'PEJP': 'min',\n    'PTEC': '',\n    'DEMAIN': '',\n    'IINST': 'A',\n    'IINST1': 'A',\n    'IINST2': 'A',\n    'IINST3': 'A',\n    'IMAX': 'A',\n    'IMAX1': 'A',\n    'IMAX2': 'A',\n    'IMAX3': 'A',\n    'ADPS': '',\n    'ADIR1': '',\n    'ADIR2': '',\n    'ADIR3': '',\n    'PAPP': 'W', // VA but home assistant requires W\n    'PMAX': 'W',\n    'PPOT': '',\n    'HHPHC': '',\n    'HCHT': 'Wh' // custom\n};\n\nmsg.payload.units = {\n    'ADCO': '',\n    'OPTARIF': '',\n    'ISOUSC': 'A',\n    'BASE': 'Wh',\n    'HCHC': 'Wh',\n    'HCHP': 'Wh',\n    'EJPHN': 'Wh',\n    'EJPHPM': 'Wh',\n    'BBRHCJB': 'Wh',\n    'BBRHPJB': 'Wh',\n    'BBRHCJW': 'Wh',\n    'BBRHPJW': 'Wh',\n    'BBRHCJR': 'Wh',\n    'BBRHPJR': 'Wh',\n    'PEJP': 'min',\n    'PTEC': '',\n    'DEMAIN': '',\n    'IINST': 'A',\n    'IINST1': 'A',\n    'IINST2': 'A',\n    'IINST3': 'A',\n    'IMAX': 'A',\n    'IMAX1': 'A',\n    'IMAX2': 'A',\n    'IMAX3': 'A',\n    'ADPS': '',\n    'ADIR1': '',\n    'ADIR2': '',\n    'ADIR3': '',\n    'PAPP': 'W', // VA but home assistant requires W\n    'PMAX': 'W',\n    'PPOT': '',\n    'HHPHC': '',\n    'HCHT': 'Wh' // custom\n};\n\nmsg.payload.type = {\n    'ADCO': 'text',\n    'OPTARIF': 'text',\n    'ISOUSC': 'text',\n    'BASE': 'sensor',\n    'HCHC': 'sensor',\n    'HCHP': 'sensor',\n    'EJPHN': 'sensor',\n    'EJPHPM': 'sensor',\n    'BBRHCJB': 'sensor',\n    'BBRHPJB': 'sensor',\n    'BBRHCJW': 'sensor',\n    'BBRHPJW': 'sensor',\n    'BBRHCJR': 'sensor',\n    'BBRHPJR': 'sensor',\n    'PEJP': 'sensor',\n    'PTEC': 'text',\n    'DEMAIN': 'text',\n    'IINST': 'sensor',\n    'IINST1': 'sensor',\n    'IINST2': 'sensor',\n    'IINST3': 'sensor',\n    'IMAX': 'sensor',\n    'IMAX1': 'sensor',\n    'IMAX2': 'sensor',\n    'IMAX3': 'sensor',\n    'ADPS': 'text',\n    'ADIR1': 'text',\n    'ADIR2': 'text',\n    'ADIR3': 'text',\n    'PAPP': 'sensor',\n    'PMAX': 'sensor',\n    'PPOT': 'text',\n    'HHPHC': 'text',\n    'HCHT': 'sensor' // custom\n};\n\nmsg.payload.discovery_state_class = {\n    'ADCO': '',\n    'OPTARIF': '',\n    'ISOUSC': '',\n    'BASE': 'total_increasing',\n    'HCHC': 'total_increasing',\n    'HCHP': 'total_increasing',\n    'EJPHN': 'total_increasing',\n    'EJPHPM': 'total_increasing',\n    'BBRHCJB': 'total_increasing',\n    'BBRHPJB': 'total_increasing',\n    'BBRHCJW': 'total_increasing',\n    'BBRHPJW': 'total_increasing',\n    'BBRHCJR': 'total_increasing',\n    'BBRHPJR': 'total_increasing',\n    'PEJP': '',\n    'PTEC': '',\n    'DEMAIN': '',\n    'IINST': 'measurement',\n    'IINST1': 'measurement',\n    'IINST2': 'measurement',\n    'IINST3': 'measurement',\n    'IMAX': '',\n    'IMAX1': '',\n    'IMAX2': '',\n    'IMAX3': '',\n    'ADPS': '',\n    'ADIR1': '',\n    'ADIR2': '',\n    'ADIR3': '',\n    'PAPP': 'measurement',\n    'PMAX': '',\n    'PPOT': '',\n    'HHPHC': '',\n    'HCHT': 'total_increasing' // custom\n};\n\nmsg.payload.discovery_device_class = {\n    'ADCO': '',\n    'OPTARIF': '',\n    'ISOUSC': 'current',\n    'BASE': 'energy',\n    'HCHC': 'energy',\n    'HCHP': 'energy',\n    'EJPHN': 'energy',\n    'EJPHPM': 'energy',\n    'BBRHCJB': 'energy',\n    'BBRHPJB': 'energy',\n    'BBRHCJW': 'energy',\n    'BBRHPJW': 'energy',\n    'BBRHCJR': 'energy',\n    'BBRHPJR': 'energy',\n    'PEJP': '',\n    'PTEC': '',\n    'DEMAIN': '',\n    'IINST': 'current',\n    'IINST1': 'current',\n    'IINST2': 'current',\n    'IINST3': 'current',\n    'IMAX': 'current',\n    'IMAX1': 'current',\n    'IMAX2': 'current',\n    'IMAX3': 'current',\n    'ADPS': 'current',\n    'ADIR1': 'current',\n    'ADIR2': 'current',\n    'ADIR3': 'current',\n    'PAPP': 'power',\n    'PMAX': 'power',\n    'PPOT': '',\n    'HHPHC': '',\n    'HCHT': 'energy' // custom\n};\n\nmsg.payload.discovery_value_template = {\n    'ADCO': \"{% if 'ADCO' in value_json %}{{ value_json.ADCO.raw }}{% endif %}\",\n    'OPTARIF': \"{% if 'OPTARIF' in value_json %}{{ value_json.OPTARIF.value }}{% endif %}\",\n    'ISOUSC': \"{% if 'ISOUSC' in value_json %}{{ value_json.ISOUSC.value }}{% endif %}\",\n    'BASE': \"{% if 'BASE' in value_json %}{{ value_json.BASE.value }}{% endif %}\",\n    'HCHC': \"{% if 'HCHC' in value_json %}{{ value_json.HCHC.value }}{% endif %}\",\n    'HCHP': \"{% if 'HCHP' in value_json %}{{ value_json.HCHP.value }}{% endif %}\",\n    'EJPHN': \"{% if 'EJPHN' in value_json %}{{ value_json.EJPHN.value }}{% endif %}\",\n    'EJPHPM': \"{% if 'EJPHPM' in value_json %}{{ value_json.EJPHPM.value }}{% endif %}\",\n    'BBRHCJB': \"{% if 'BBRHCJB' in value_json %}{{ value_json.BBRHCJB.value }}{% endif %}\",\n    'BBRHPJB': \"{% if 'BBRHPJB' in value_json %}{{ value_json.BBRHPJB.value }}{% endif %}\",\n    'BBRHCJW': \"{% if 'BBRHCJW' in value_json %}{{ value_json.BBRHCJW.value }}{% endif %}\",\n    'BBRHPJW': \"{% if 'BBRHPJW' in value_json %}{{ value_json.BBRHPJW.value }}{% endif %}\",\n    'BBRHCJR': \"{% if 'BBRHCJR' in value_json %}{{ value_json.BBRHCJR.value }}{% endif %}\",\n    'BBRHPJR': \"{% if 'BBRHPJR' in value_json %}{{ value_json.BBRHPJR.value }}{% endif %}\",\n    'PEJP': \"{% if 'PEJP' in value_json %}{{ value_json.PEJP.value }}{% endif %}\",\n    'PTEC': \"{% if 'PTEC' in value_json %}{{ value_json.PTEC.value }}{% endif %}\",\n    'DEMAIN': \"{% if 'DEMAIN' in value_json %}{{ value_json.DEMAIN.value }}{% endif %}\",\n    'IINST': \"{% if 'IINST' in value_json %}{{ value_json.IINST.value }}{% endif %}\",\n    'IINST1': \"{% if 'IINST1' in value_json %}{{ value_json.IINST1.value }}{% endif %}\",\n    'IINST2': \"{% if 'IINST2' in value_json %}{{ value_json.IINST2.value }}{% endif %}\",\n    'IINST3': \"{% if 'IINST3' in value_json %}{{ value_json.IINST3.value }}{% endif %}\",\n    'IMAX': \"{% if 'IMAX' in value_json %}{{ value_json.IMAX.value }}{% endif %}\",\n    'IMAX1': \"{% if 'IMAX1' in value_json %}{{ value_json.IMAX1.value }}{% endif %}\",\n    'IMAX2': \"{% if 'IMAX2' in value_json %}{{ value_json.IMAX2.value }}{% endif %}\",\n    'IMAX3': \"{% if 'IMAX3' in value_json %}{{ value_json.IMAX3.value }}{% endif %}\",\n    'ADPS': \"{% if 'ADPS' in value_json %}{{ value_json.ADPS.value }}{% endif %}\",\n    'ADIR1': \"{% if 'ADIR1' in value_json %}{{ value_json.ADIR1.value }}{% endif %}\",\n    'ADIR2': \"{% if 'ADIR2' in value_json %}{{ value_json.ADIR2.value }}{% endif %}\",\n    'ADIR3': \"{% if 'ADIR3' in value_json %}{{ value_json.ADIR3.value }}{% endif %}\",\n    'PAPP': \"{% if 'PAPP' in value_json %}{{ value_json.PAPP.value }}{% endif %}\",\n    'PMAX': \"{% if 'PMAX' in value_json %}{{ value_json.PMAX.value }}{% endif %}\",\n    'PPOT': \"{% if 'PPOT' in value_json %}{{ value_json.PPOT.raw }}{% endif %}\",\n    'HHPHC': \"{% if 'HHPHC' in value_json %}{{ value_json.HHPHC.value }}{% endif %}\",\n    'HCHT': \"{% if 'HCHT' in value_json %}{{ value_json.HCHT.value }}{% endif %}\" // custom\n};\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1986,7 +1988,7 @@
         "z": "3f247e8940433129",
         "g": "41f6bf7d5f4ab75c",
         "name": "parse",
-        "func": "// get descriptions\nlet describe = global.get('describe', 'memoryOnly');\n\n// Remove dirty code\nlet lines = msg.payload.toString().replace(\"\\u0002\\n\",\"\").replace(\"\\r\\u0003\",\"\");\nmsg.payload = {};\n\n// Split message by line\nlines = lines.split(\"\\r\\n\");\nfor (const line in lines) {\n\n\t// Prepare checksum\n\tlet i;\n\tlet checksum = 32;\n\tlet myline = lines[line].toString().replace(\"  \",\" s\").split(\" \");\n\n\t// Split current message\n\tlet check = myline.pop();\n\tlet origin = myline.pop();\n\tlet label = myline.pop();\n\n\t// Regain checksum\n\tif (check == \"s\") check = \" \";\n\n\t// Calcul checksum\n\tfor (i = 0; i < label.length; i++) checksum += label.charCodeAt(i);\n\tfor (i = 0; i < origin.length; i++) checksum += origin.charCodeAt(i);\n\tchecksum = ((checksum%256) & 63) + 32;\n\tchecksum = String.fromCharCode(checksum);\n\n\t// Checksum is not ok\n\tif (checksum != check ) {\n\t\tlet error = {\n\t\t\t'topic':'',\n\t\t\t'payload': 'Bad Checksum \"' + checksum + '\" for label \"' + label + '\".'\n\t\t};\n\t\treturn [null, error];\n\t}\n\n\t// Parse message\n\tlet full = origin;\n\tlet trans = origin;\n\tlet name = label;\n\tlet unit = '';\n\n\t// get readbale label\n\tif (typeof describe.names[label] === 'string') {\n\t\tname = describe.names[label];\n\t}\n\n\t// get unit of measurement\n\tif (typeof describe.units[label] === 'string') {\n\t\tunit = describe.units[label];\n\t}\n\n\t// Convert numeric value to number\n\tif (!isNaN(trans) && isFinite(Number(trans))) trans = Number(trans);\n\n\t// set full value with unit\n\tif (unit !== '') {\n\t\tfull = trans.toString() + ' ' + unit;\n\t}\n\n\t// OPTARIF : chars, length 4\n\tif (label == \"OPTARIF\") {\n\t\tif (trans.substring(trans.length - 1) == '.') trans = trans.substring(0, trans.length -1);\n\t\tif (trans.substring(trans.length - 1) == '.') trans = trans.substring(0, trans.length -1);\n\n\t\tfull = typeof describe.optarif[origin] === 'string' ? describe.optarif[origin] : '';\n\t}\n\t// PTEC : chars, length 4\n\telse if (label == \"PTEC\") {\n\n\t\tif (trans.substring(trans.length - 1) == '.') trans = trans.substring(0, trans.length -1);\n\t\tif (trans.substring(trans.length - 1) == '.') trans = trans.substring(0, trans.length -1);\n\n\t\tfull = typeof describe.ptec[origin] === 'string' ? describe.ptec[origin] : '';\n\t}\n\n\t// Add to output\n\tmsg.payload[label] ={\n\t\t'raw': origin,\n\t\t'value': trans,\n\t\t'full': full,\n\t\t'name': name,\n\t\t'unit': unit\n\t};\n}\n\n// Custom entity\nif (typeof msg.payload['HCHC'] === 'object' &&\n\ttypeof msg.payload['HCHP'] === 'object'\n) {\n\tlet total = msg.payload['HCHC']['value'] + msg.payload['HCHP']['value'];\n\tmsg.payload['HCHT'] = {\n\t\t'raw': total.toString(),\n\t\t'value': total,\n\t\t'full': total.toString() + ' ' + describe.units['HCHT'],\n\t\t'name': describe.names['HCHT'],\n\t\t'unit': describe.units['HCHT']\n\t};\n}\n\n// Other info\nlet unit = global.get('units[\"' + msg.port + '\"]', 'default');\nif (typeof unit === 'object') {\n\tmsg.payload['NAME'] = {\n\t\t'raw': unit['name'],\n\t\t'value': unit['name'],\n\t\t'full': unit['name'],\n\t\t'name': 'Nom'\n\t};\n\tmsg.payload['LOCATION'] = {\n\t\t'raw': unit['location'],\n\t\t'value': unit['location'],\n\t\t'full': unit['location'],\n\t\t'name': 'Emplacement'\n\t};\n\tmsg.payload['PORT'] = {\n\t\t'raw': unit['port'],\n\t\t'value': unit['port'],\n\t\t'full': unit['port'],\n\t\t'name': 'Port de communication'\n\t};\n}\n\n// Should not happen\nif (typeof msg.payload.ADCO !== 'object') {\n\tlet error = {\n\t\t'topic': '',\n\t\t'payload': 'Uncomplete message received.'\n\t};\n\treturn [null, error];\n}\n\n// Additional data. Preferred tariff period in progress\nif (typeof msg.payload.OPTARIF === 'object' && msg.payload.OPTARIF.value === 'HC') {\n\tlet preferred = msg.payload.PTEC.value === 'HC' ? 1 : 0;\n\tmsg.payload['PREFERRED'] = {\n\t\t'raw': preferred.toString(),\n\t\t'value': preferred,\n\t\t'full': preferred.toString(),\n\t\t'name': 'Période recommandée'\n\t};\n}\n\n// Save in memory\nlet controls = global.get('controls', 'memoryOnly')||{};\ncontrols[msg.port] = msg.payload;\nglobal.set('controls', controls, 'memoryOnly');\n\n// Send to MQTT\nreturn [msg, null];",
+        "func": "// get descriptions\nlet describe = global.get('describe', 'memoryOnly');\n\n// Remove dirty code\nlet lines = msg.payload.toString().replace(\"\\u0002\\n\",\"\").replace(\"\\r\\u0003\",\"\");\nmsg.payload = {};\n\n// Split message by line\nlines = lines.split(\"\\r\\n\");\nfor (const line in lines) {\n\n\t// Skip empty line\n\tif (lines[line].toString().trim() === '') continue;\n\n\t// Prepare checksum\n\tlet i;\n\tlet checksum = 32;\n\tlet myline = lines[line].toString().replace(\"  \",\" s\").split(\" \");\n\n\t// Malformed line (garbage on serial port)\n\tif (myline.length < 3) {\n\t\tlet error = {\n\t\t\t'topic': '',\n\t\t\t'port': msg.port,\n\t\t\t'payload': 'Malformed line \"' + lines[line].toString().slice(0, 30) + '\".'\n\t\t};\n\t\treturn [null, error];\n\t}\n\n\t// Split current message\n\tlet check = myline.pop();\n\tlet origin = myline.pop();\n\tlet label = myline.pop();\n\n\t// Regain checksum\n\tif (check == \"s\") check = \" \";\n\n\t// Calcul checksum\n\tfor (i = 0; i < label.length; i++) checksum += label.charCodeAt(i);\n\tfor (i = 0; i < origin.length; i++) checksum += origin.charCodeAt(i);\n\tchecksum = ((checksum%256) & 63) + 32;\n\tchecksum = String.fromCharCode(checksum);\n\n\t// Checksum is not ok\n\tif (checksum != check ) {\n\t\tlet error = {\n\t\t\t'topic':'',\n\t\t\t'port': msg.port,\n\t\t\t'payload': 'Bad Checksum \"' + checksum + '\" for label \"' + label + '\".'\n\t\t};\n\t\treturn [null, error];\n\t}\n\n\t// Parse message\n\tlet full = origin;\n\tlet trans = origin;\n\tlet name = label;\n\tlet unit = '';\n\n\t// get readbale label\n\tif (typeof describe.names[label] === 'string') {\n\t\tname = describe.names[label];\n\t}\n\n\t// get unit of measurement\n\tif (typeof describe.units[label] === 'string') {\n\t\tunit = describe.units[label];\n\t}\n\n\t// Convert numeric value to number\n\tif (!isNaN(trans) && isFinite(Number(trans))) trans = Number(trans);\n\n\t// set full value with unit\n\tif (unit !== '') {\n\t\tfull = trans.toString() + ' ' + unit;\n\t}\n\n\t// OPTARIF : chars, length 4\n\tif (label == \"OPTARIF\") {\n\t\tif (trans.substring(trans.length - 1) == '.') trans = trans.substring(0, trans.length -1);\n\t\tif (trans.substring(trans.length - 1) == '.') trans = trans.substring(0, trans.length -1);\n\n\t\tfull = typeof describe.optarif[origin] === 'string' ? describe.optarif[origin] : '';\n\t}\n\t// PTEC : chars, length 4\n\telse if (label == \"PTEC\") {\n\n\t\tif (trans.substring(trans.length - 1) == '.') trans = trans.substring(0, trans.length -1);\n\t\tif (trans.substring(trans.length - 1) == '.') trans = trans.substring(0, trans.length -1);\n\n\t\tfull = typeof describe.ptec[origin] === 'string' ? describe.ptec[origin] : '';\n\t}\n\n\t// Add to output\n\tmsg.payload[label] ={\n\t\t'raw': origin,\n\t\t'value': trans,\n\t\t'full': full,\n\t\t'name': name,\n\t\t'unit': unit\n\t};\n}\n\n// Custom entity\nif (typeof msg.payload['HCHC'] === 'object' &&\n\ttypeof msg.payload['HCHP'] === 'object'\n) {\n\tlet total = msg.payload['HCHC']['value'] + msg.payload['HCHP']['value'];\n\tmsg.payload['HCHT'] = {\n\t\t'raw': total.toString(),\n\t\t'value': total,\n\t\t'full': total.toString() + ' ' + describe.units['HCHT'],\n\t\t'name': describe.names['HCHT'],\n\t\t'unit': describe.units['HCHT']\n\t};\n}\n\n// Other info\nlet unit = global.get('units[\"' + msg.port + '\"]', 'default');\nif (typeof unit === 'object') {\n\tmsg.payload['NAME'] = {\n\t\t'raw': unit['name'],\n\t\t'value': unit['name'],\n\t\t'full': unit['name'],\n\t\t'name': 'Nom'\n\t};\n\tmsg.payload['LOCATION'] = {\n\t\t'raw': unit['location'],\n\t\t'value': unit['location'],\n\t\t'full': unit['location'],\n\t\t'name': 'Emplacement'\n\t};\n\tmsg.payload['PORT'] = {\n\t\t'raw': unit['port'],\n\t\t'value': unit['port'],\n\t\t'full': unit['port'],\n\t\t'name': 'Port de communication'\n\t};\n}\n\n// Should not happen\nif (typeof msg.payload.ADCO !== 'object') {\n\tlet error = {\n\t\t'topic': '',\n\t\t'port': msg.port,\n\t\t'payload': 'Uncomplete message received.'\n\t};\n\treturn [null, error];\n}\n\n// Additional data. Preferred tariff period in progress\nif (typeof msg.payload.OPTARIF === 'object' && msg.payload.OPTARIF.value === 'HC') {\n\tlet preferred = msg.payload.PTEC.value === 'HC' ? 1 : 0;\n\tmsg.payload['PREFERRED'] = {\n\t\t'raw': preferred.toString(),\n\t\t'value': preferred,\n\t\t'full': preferred.toString(),\n\t\t'name': 'Période recommandée'\n\t};\n}\n\n// Save in memory\nlet controls = global.get('controls', 'memoryOnly')||{};\ncontrols[msg.port] = msg.payload;\nglobal.set('controls', controls, 'memoryOnly');\n\n// Send to MQTT\nreturn [msg, null];",
         "outputs": 2,
         "timeout": 0,
         "noerr": 0,
@@ -1998,10 +2000,12 @@
         "wires": [
             [
                 "8895034b18c01f36",
-                "644d1057cd0b9909"
+                "644d1057cd0b9909",
+                "b1d0c0de7a5e0007"
             ],
             [
-                "02278f78e79bba90"
+                "02278f78e79bba90",
+                "b1d0c0de7a5e0007"
             ]
         ]
     },
@@ -2051,7 +2055,8 @@
         "y": 560,
         "wires": [
             [
-                "02278f78e79bba90"
+                "02278f78e79bba90",
+                "b1d0c0de7a5e0007"
             ]
         ]
     },
@@ -3026,7 +3031,7 @@
         "z": "3f247e8940433129",
         "g": "c2a4c908aa1cf2e9",
         "name": "discovery",
-        "func": "let enabled = global.get('mqtt.enabled', 'default') || false;\nlet discovery = global.get('mqtt.homeassistant', 'default') || '';\nlet topic = global.get('mqtt.topic', 'default') || '';\n\nif (!enabled || topic === '') {\n\n    return;\n}\n\n// Home Assistant rejects empty or 'none' device_class, state_class and unit\nfunction clean(payload) {\n    for (const k of ['device_class', 'state_class', 'unit_of_measurement']) {\n        if (payload[k] === undefined || payload[k] === null || payload[k] === '' || payload[k] === 'none') {\n            delete payload[k];\n        }\n    }\n\n    return payload;\n}\n\nlet source = 'teleinfo';\nlet describe = global.get('describe', 'memoryOnly') || {};\n\n// Options labels in the language of the MQTT configuration\nconst lang = global.get('mqtt.lang', 'default') || 'fr';\nconst words = (describe.translate || {})[lang] || {};\nconst tr = s => typeof s === 'string' && typeof words[s] === 'string' ? words[s] : s;\nconst trOptions = o => { let r = {}; for (const k in (o || {})) { r[k] = tr(o[k]); } return r; };\n// Home Assistant template mapping a value with a dictionary\nconst haMap = m => '{{ ' + JSON.stringify(m) + '[value] | default(value) }}';\n\n// Entities with a list of values (key is the raw value)\nconst enums = { 'OPTARIF': describe.optarif, 'PTEC': describe.ptec, 'DEMAIN': describe.demain };\n\n\n// Source definition\nlet srcMsg = {\n    'topic': [topic, 'discovery', source].join('/'),\n    'payload': describe.app,\n    'qos': 0,\n    'retain': true\n};\n\nnode.send([srcMsg]);\n\nlet tics = global.get('controls', 'memoryOnly') || {};\nfor (const port in tics) {\n    let id = tics[port]['ADCO']['raw'];\n    for (const k in describe.discovery_value_template) {\n\n        if (id !== '') {\n            // DKNR discovery\n            let dknrMsg = {\n                'topic': [topic, 'discovery', source, id, k].join('/'),\n                'payload': {\n                    'name': describe.names[k],\n                    'group': 'sensor',\n                    'type': typeof enums[k] === 'object' ? 'enum' : (describe.units[k] === '' ? 'text' : 'number'),\n                    'unit': describe.units[k],\n                    'value': describe.units[k] === '' ? '' : 0,\n                    'options': typeof enums[k] === 'object' ? trOptions(enums[k]) : {}\n                },\n                'qos': 0,\n                'retain': true\n            };\n\n            node.send([dknrMsg]);\n        }\n\n        // Home assistant discovery\n        if (discovery !== \"\" && (describe.type[k] === 'sensor' || typeof enums[k] === 'object')) {\n            let haMsg = {\n                'topic': discovery + '/sensor/' + source + '/' + id + '_' + k + '/config',\n                'payload': {\n                    \"unique_id\": ['dknr', source, id, k].join('_'),\n                    \"name\": describe.names[k],\n                    \"state_topic\": [topic, 'get', source, id, k].join('/'),\n                    \"state_class\": describe.discovery_state_class[k],\n                    \"device_class\": describe.discovery_device_class[k],\n                    \"unit_of_measurement\": describe.units[k],\n                    \"device\": {\n                        \"identifiers\": [\n                            id\n                        ],\n                        \"manufacturer\": \"Enedis\",\n                        \"model\": \"teleinfo_\" + id,\n                        \"name\": \"Teleinfo \" + id\n                    }\n                }\n            };\n\n            // list of values: DKNR value is the raw key, show the label\n            // (text sensor rather than enum, an unknown meter value would be refused by Home Assistant)\n            if (typeof enums[k] === 'object') {\n                delete haMsg.payload.state_class;\n                delete haMsg.payload.device_class;\n                delete haMsg.payload.unit_of_measurement;\n                haMsg.payload.value_template = haMap(trOptions(enums[k]));\n            }\n\n            clean(haMsg.payload);\n\n            node.send([haMsg]);\n        }\n    }\n}\n\nreturn;",
+        "func": "let enabled = global.get('mqtt.enabled', 'default') || false;\nlet discovery = global.get('mqtt.homeassistant', 'default') || '';\nlet topic = global.get('mqtt.topic', 'default') || '';\n\nif (!enabled || topic === '') {\n\n    return;\n}\n\n// Home Assistant rejects empty or 'none' device_class, state_class and unit\nfunction clean(payload) {\n    for (const k of ['device_class', 'state_class', 'unit_of_measurement']) {\n        if (payload[k] === undefined || payload[k] === null || payload[k] === '' || payload[k] === 'none') {\n            delete payload[k];\n        }\n    }\n\n    return payload;\n}\n\nlet source = 'teleinfo';\nlet describe = global.get('describe', 'memoryOnly') || {};\n\n// Options labels in the language of the MQTT configuration\nconst lang = global.get('mqtt.lang', 'default') || 'fr';\nconst words = (describe.translate || {})[lang] || {};\nconst tr = s => typeof s === 'string' && typeof words[s] === 'string' ? words[s] : s;\nconst trOptions = o => { let r = {}; for (const k in (o || {})) { r[k] = tr(o[k]); } return r; };\n// Home Assistant template mapping a value with a dictionary\nconst haMap = m => '{{ ' + JSON.stringify(m) + '[value] | default(value) }}';\n\n// Entities with a list of values (key is the raw value)\nconst enums = { 'OPTARIF': describe.optarif, 'PTEC': describe.ptec, 'DEMAIN': describe.demain };\n\n\n// Source definition\nlet srcMsg = {\n    'topic': [topic, 'discovery', source].join('/'),\n    'payload': describe.app,\n    'qos': 0,\n    'retain': true\n};\n\nnode.send([srcMsg]);\n\nlet tics = global.get('controls', 'memoryOnly') || {};\nfor (const port in tics) {\n    let id = tics[port]['ADCO']['raw'];\n    for (const k in describe.discovery_value_template) {\n\n        if (id !== '') {\n            // DKNR discovery\n            let dknrMsg = {\n                'topic': [topic, 'discovery', source, id, k].join('/'),\n                'payload': {\n                    'name': describe.names[k],\n                    'group': 'sensor',\n                    'type': typeof enums[k] === 'object' ? 'enum' : (describe.units[k] === '' ? 'text' : 'number'),\n                    'unit': describe.units[k],\n                    'value': describe.units[k] === '' ? '' : 0,\n                    'options': typeof enums[k] === 'object' ? trOptions(enums[k]) : {}\n                },\n                'qos': 0,\n                'retain': true\n            };\n\n            node.send([dknrMsg]);\n        }\n\n        // Home assistant discovery\n        if (discovery !== \"\" && (describe.type[k] === 'sensor' || typeof enums[k] === 'object')) {\n            let haMsg = {\n                'topic': discovery + '/sensor/' + source + '/' + id + '_' + k + '/config',\n                'payload': {\n                    \"unique_id\": ['dknr', source, id, k].join('_'),\n                    \"name\": describe.names[k],\n                    \"state_topic\": [topic, 'get', source, id, k].join('/'),\n                    \"state_class\": describe.discovery_state_class[k],\n                    \"device_class\": describe.discovery_device_class[k],\n                    \"unit_of_measurement\": describe.units[k],\n                    \"device\": {\n                        \"identifiers\": [\n                            id\n                        ],\n                        \"manufacturer\": \"Enedis\",\n                        \"model\": \"teleinfo_\" + id,\n                        \"name\": \"Teleinfo \" + id\n                    }\n                }\n            };\n\n            // list of values: DKNR value is the raw key, show the label\n            // (text sensor rather than enum, an unknown meter value would be refused by Home Assistant)\n            if (typeof enums[k] === 'object') {\n                delete haMsg.payload.state_class;\n                delete haMsg.payload.device_class;\n                delete haMsg.payload.unit_of_measurement;\n                haMsg.payload.value_template = haMap(trOptions(enums[k]));\n            }\n\n            clean(haMsg.payload);\n\n            node.send([haMsg]);\n        }\n    }\n\n    // Reading fault (watchdog), binary 0 / 1\n    if (id !== '') {\n        node.send([{\n            'topic': [topic, 'discovery', source, id, 'FAULT'].join('/'),\n            'payload': {\n                'name': describe.names['FAULT'],\n                'group': 'sensor',\n                'type': 'binary',\n                'unit': '',\n                'value': 0,\n                'options': {}\n            },\n            'qos': 0,\n            'retain': true\n        }]);\n\n        if (discovery !== '') {\n            node.send([{\n                'topic': discovery + '/binary_sensor/' + source + '/' + id + '_FAULT/config',\n                'payload': {\n                    'unique_id': ['dknr', source, id, 'FAULT'].join('_'),\n                    'name': describe.names['FAULT'],\n                    'state_topic': [topic, 'get', source, id, 'FAULT'].join('/'),\n                    'payload_on': '1',\n                    'payload_off': '0',\n                    'device_class': 'problem',\n                    'entity_category': 'diagnostic',\n                    'device': {\n                        'identifiers': [\n                            id\n                        ],\n                        'manufacturer': 'Enedis',\n                        'model': 'teleinfo_' + id,\n                        'name': 'Teleinfo ' + id\n                    }\n                },\n                'qos': 0,\n                'retain': true\n            }]);\n        }\n    }\n}\n\nreturn;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -3454,6 +3459,229 @@
         "x": 455,
         "y": 440,
         "wires": []
+    },
+    {
+        "id": "b1d0c0de7a5e0007",
+        "type": "link out",
+        "z": "3f247e8940433129",
+        "g": "41f6bf7d5f4ab75c",
+        "name": "custom - port - watchdog",
+        "mode": "link",
+        "links": [
+            "b1d0c0de7a5e0002"
+        ],
+        "x": 615,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "b1d0c0de7a5e0001",
+        "type": "group",
+        "z": "3f247e8940433129",
+        "name": "custom - watchdog",
+        "style": {
+            "fill": "#ff0000",
+            "fill-opacity": "0.05",
+            "label": true
+        },
+        "nodes": [
+            "b1d0c0de7a5e0002",
+            "b1d0c0de7a5e0003",
+            "b1d0c0de7a5e0004",
+            "b1d0c0de7a5e0005",
+            "b1d0c0de7a5e0006",
+            "b1d0c0de7a5e0010",
+            "b1d0c0de7a5e0011",
+            "b1d0c0de7a5e0012",
+            "b1d0c0de7a5e0013"
+        ],
+        "x": 814,
+        "y": 279,
+        "w": 692,
+        "h": 222
+    },
+    {
+        "id": "b1d0c0de7a5e0002",
+        "type": "link in",
+        "z": "3f247e8940433129",
+        "g": "b1d0c0de7a5e0001",
+        "name": "custom - port - watchdog",
+        "links": [
+            "b1d0c0de7a5e0007"
+        ],
+        "x": 875,
+        "y": 340,
+        "wires": [
+            [
+                "b1d0c0de7a5e0004"
+            ]
+        ]
+    },
+    {
+        "id": "b1d0c0de7a5e0003",
+        "type": "inject",
+        "z": "3f247e8940433129",
+        "g": "b1d0c0de7a5e0001",
+        "name": "tick 10 s",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "tick",
+        "x": 900,
+        "y": 400,
+        "wires": [
+            [
+                "b1d0c0de7a5e0004"
+            ]
+        ]
+    },
+    {
+        "id": "b1d0c0de7a5e0004",
+        "type": "function",
+        "z": "3f247e8940433129",
+        "g": "b1d0c0de7a5e0001",
+        "name": "watchdog",
+        "func": "// Watch the TIC reading of each serial port\n// input: valid frame (parse output 1), bad frame (parse output 2, catch), tick (inject)\n// output 1: FAULT entity to MQTT (0 / 1) / output 2: serial control (close then reopen the port)\n\nconst BAD_LIMIT = 5;      // consecutive bad frames before fault\nconst SILENCE = 60000;    // ms without valid frame before fault (port that already worked)\nconst RECOVER = 3;        // consecutive valid frames to clear fault\nconst RESET_MIN = 60000;  // first delay between two port resets\nconst RESET_MAX = 600000; // max delay between two port resets\nconst REOPEN = 3000;      // ms between port close and reopen\n\nconst topic = global.get('mqtt.topic', 'default') || '';\nconst source = 'teleinfo';\nconst now = Date.now();\n\nlet started = context.get('started', 'memoryOnly');\nif (typeof started !== 'number') {\n    started = now;\n    context.set('started', started, 'memoryOnly');\n}\nlet ports = context.get('ports', 'memoryOnly') || {};\n// meter address of each port, kept across restarts to detect a port that never comes back\nlet known = context.get('known', 'default') || {};\n\nfunction state(port) {\n    if (typeof ports[port] !== 'object') {\n        ports[port] = { 'bad': 0, 'good': 0, 'last': started, 'fault': 0, 'resets': 0, 'next': 0, 'reason': '' };\n    }\n\n    return ports[port];\n}\n\n// Frame received\nif (msg.topic !== 'tick' && typeof msg.port === 'string' && msg.port !== '') {\n    const s = state(msg.port);\n    const p = msg.payload;\n    if (typeof p === 'object' && p !== null && typeof p.ADCO === 'object' && p.ADCO.raw) {\n        s.bad = 0;\n        s.good++;\n        s.last = now;\n        if (known[msg.port] !== p.ADCO.raw) {\n            known[msg.port] = p.ADCO.raw;\n            context.set('known', known, 'default');\n        }\n        if (s.fault === 1 && s.good >= RECOVER) {\n            s.fault = 0;\n            s.resets = 0;\n            s.next = 0;\n            node.warn('TIC ' + msg.port + ' : lecture rétablie');\n        }\n    } else {\n        s.bad++;\n        s.good = 0;\n        s.reason = String(p);\n    }\n}\n\nlet text = [];\nlet fill = 'green';\nfor (const port of new Set([...Object.keys(known), ...Object.keys(ports)])) {\n    const s = state(port);\n    const adco = known[port] || '';\n\n    // Enter fault\n    if (s.fault === 0 && (s.bad >= BAD_LIMIT || (adco !== '' && now - s.last > SILENCE))) {\n        s.fault = 1;\n        s.good = 0;\n        s.resets = 0;\n        s.next = now;\n        node.warn('TIC ' + port + ' : lecture en défaut, ' + (s.bad >= BAD_LIMIT\n            ? s.bad + ' trames mal décodées (' + s.reason + ')'\n            : 'aucune trame valide depuis ' + Math.round((now - s.last) / 1000) + ' s'));\n    }\n\n    // Reset the port: close then reopen it, like unplugging the USB cable\n    if (s.fault === 1 && now >= s.next) {\n        node.send([null, { 'port': port, 'payload': { 'enabled': false } }]);\n        setTimeout(() => node.send([null, { 'port': port, 'payload': { 'enabled': true } }]), REOPEN);\n        s.resets++;\n        s.bad = 0;\n        s.next = now + Math.min(RESET_MIN * Math.pow(2, s.resets - 1), RESET_MAX);\n        node.warn('TIC ' + port + ' : réouverture du port (essai ' + s.resets + ')');\n    }\n\n    // Publish on change (and after the daily reset of last values)\n    const key = 'last[\"' + adco + '_FAULT\"]';\n    if (adco !== '' && topic !== '' && flow.get(key, 'memoryOnly') !== String(s.fault)) {\n        flow.set(key, String(s.fault), 'memoryOnly');\n        node.send([{\n            'topic': [topic, 'get', source, adco, 'FAULT'].join('/'),\n            'payload': String(s.fault)\n        }, null]);\n    }\n\n    if (s.fault === 1) {\n        fill = 'red';\n    }\n    text.push(port.replace('/dev/', '') + (s.fault === 1 ? ' défaut (' + s.resets + ')' : ' ok'));\n}\n\ncontext.set('ports', ports, 'memoryOnly');\nnode.status({ 'fill': fill, 'shape': 'dot', 'text': text.length ? text.join(', ') : 'en attente' });\n\nreturn;",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1080,
+        "y": 360,
+        "wires": [
+            [
+                "b1d0c0de7a5e0005",
+                "02278f78e79bba90"
+            ],
+            [
+                "b1d0c0de7a5e0006"
+            ]
+        ]
+    },
+    {
+        "id": "b1d0c0de7a5e0005",
+        "type": "link out",
+        "z": "3f247e8940433129",
+        "g": "b1d0c0de7a5e0001",
+        "name": "custom - watchdog - mqtt",
+        "mode": "link",
+        "links": [
+            "903b30464ff4dd7b"
+        ],
+        "x": 1255,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "b1d0c0de7a5e0006",
+        "type": "switch",
+        "z": "3f247e8940433129",
+        "g": "b1d0c0de7a5e0001",
+        "name": "port",
+        "property": "port",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "/dev/ttyUSB0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "/dev/ttyUSB1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "/dev/ttyUSB2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "/dev/ttyUSB3",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 4,
+        "x": 1250,
+        "y": 400,
+        "wires": [
+            [
+                "b1d0c0de7a5e0010"
+            ],
+            [
+                "b1d0c0de7a5e0011"
+            ],
+            [
+                "b1d0c0de7a5e0012"
+            ],
+            [
+                "b1d0c0de7a5e0013"
+            ]
+        ]
+    },
+    {
+        "id": "b1d0c0de7a5e0010",
+        "type": "serial control",
+        "z": "3f247e8940433129",
+        "g": "b1d0c0de7a5e0001",
+        "name": "control USB0",
+        "serial": "9f6799af93da4e9b",
+        "x": 1420,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b1d0c0de7a5e0011",
+        "type": "serial control",
+        "z": "3f247e8940433129",
+        "g": "b1d0c0de7a5e0001",
+        "name": "control USB1",
+        "serial": "08e1aee81f87840a",
+        "x": 1420,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b1d0c0de7a5e0012",
+        "type": "serial control",
+        "z": "3f247e8940433129",
+        "g": "b1d0c0de7a5e0001",
+        "name": "control USB2",
+        "serial": "fd1aaf0ecae5bfb5",
+        "x": 1420,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b1d0c0de7a5e0013",
+        "type": "serial control",
+        "z": "3f247e8940433129",
+        "g": "b1d0c0de7a5e0001",
+        "name": "control USB3",
+        "serial": "90afe585d3016433",
+        "x": 1420,
+        "y": 460,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "70521b5c6b8aa223",
