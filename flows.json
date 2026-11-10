@@ -384,6 +384,33 @@
         "h": 262
     },
     {
+        "id": "b1d0c0de7a5e0001",
+        "type": "group",
+        "z": "3f247e8940433129",
+        "name": "custom - watchdog",
+        "style": {
+            "fill": "#ff0000",
+            "fill-opacity": "0.05",
+            "label": true
+        },
+        "nodes": [
+            "b1d0c0de7a5e0002",
+            "b1d0c0de7a5e0003",
+            "b1d0c0de7a5e0004",
+            "b1d0c0de7a5e0005",
+            "b1d0c0de7a5e0006",
+            "b1d0c0de7a5e0010",
+            "b1d0c0de7a5e0011",
+            "b1d0c0de7a5e0012",
+            "b1d0c0de7a5e0013",
+            "64bb6376105a17ad"
+        ],
+        "x": 874,
+        "y": 279,
+        "w": 732,
+        "h": 322
+    },
+    {
         "id": "df7710b4b2c4e55b",
         "type": "ui-base",
         "name": "Tableau de bord",
@@ -826,7 +853,6 @@
         "name": "common - mqtt - send",
         "links": [
             "11a311cff80fcfb0",
-            "f4b715c1321c6848",
             "6326830faa9d7246",
             "b1d0c0de7a5e0005"
         ],
@@ -846,8 +872,7 @@
         "name": "common - error",
         "links": [
             "5d415007badd7b01",
-            "9bc2bfbb3a19f726",
-            "f4b715c1321c6848"
+            "9bc2bfbb3a19f726"
         ],
         "x": 145,
         "y": 620,
@@ -3470,35 +3495,9 @@
         "links": [
             "b1d0c0de7a5e0002"
         ],
-        "x": 615,
+        "x": 455,
         "y": 380,
         "wires": []
-    },
-    {
-        "id": "b1d0c0de7a5e0001",
-        "type": "group",
-        "z": "3f247e8940433129",
-        "name": "custom - watchdog",
-        "style": {
-            "fill": "#ff0000",
-            "fill-opacity": "0.05",
-            "label": true
-        },
-        "nodes": [
-            "b1d0c0de7a5e0002",
-            "b1d0c0de7a5e0003",
-            "b1d0c0de7a5e0004",
-            "b1d0c0de7a5e0005",
-            "b1d0c0de7a5e0006",
-            "b1d0c0de7a5e0010",
-            "b1d0c0de7a5e0011",
-            "b1d0c0de7a5e0012",
-            "b1d0c0de7a5e0013"
-        ],
-        "x": 814,
-        "y": 279,
-        "w": 692,
-        "h": 222
     },
     {
         "id": "b1d0c0de7a5e0002",
@@ -3509,8 +3508,8 @@
         "links": [
             "b1d0c0de7a5e0007"
         ],
-        "x": 875,
-        "y": 340,
+        "x": 1025,
+        "y": 380,
         "wires": [
             [
                 "b1d0c0de7a5e0004"
@@ -3534,8 +3533,8 @@
         "once": true,
         "onceDelay": "5",
         "topic": "tick",
-        "x": 900,
-        "y": 400,
+        "x": 980,
+        "y": 440,
         "wires": [
             [
                 "b1d0c0de7a5e0004"
@@ -3555,12 +3554,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1080,
-        "y": 360,
+        "x": 1160,
+        "y": 440,
         "wires": [
             [
                 "b1d0c0de7a5e0005",
-                "02278f78e79bba90"
+                "64bb6376105a17ad"
             ],
             [
                 "b1d0c0de7a5e0006"
@@ -3577,8 +3576,8 @@
         "links": [
             "903b30464ff4dd7b"
         ],
-        "x": 1255,
-        "y": 320,
+        "x": 1295,
+        "y": 380,
         "wires": []
     },
     {
@@ -3614,8 +3613,8 @@
         "checkall": "false",
         "repair": false,
         "outputs": 4,
-        "x": 1250,
-        "y": 400,
+        "x": 1330,
+        "y": 440,
         "wires": [
             [
                 "b1d0c0de7a5e0010"
@@ -3638,8 +3637,8 @@
         "g": "b1d0c0de7a5e0001",
         "name": "control USB0",
         "serial": "9f6799af93da4e9b",
-        "x": 1420,
-        "y": 340,
+        "x": 1510,
+        "y": 380,
         "wires": [
             []
         ]
@@ -3651,8 +3650,8 @@
         "g": "b1d0c0de7a5e0001",
         "name": "control USB1",
         "serial": "08e1aee81f87840a",
-        "x": 1420,
-        "y": 380,
+        "x": 1510,
+        "y": 440,
         "wires": [
             []
         ]
@@ -3664,8 +3663,8 @@
         "g": "b1d0c0de7a5e0001",
         "name": "control USB2",
         "serial": "fd1aaf0ecae5bfb5",
-        "x": 1420,
-        "y": 420,
+        "x": 1510,
+        "y": 500,
         "wires": [
             []
         ]
@@ -3677,8 +3676,8 @@
         "g": "b1d0c0de7a5e0001",
         "name": "control USB3",
         "serial": "90afe585d3016433",
-        "x": 1420,
-        "y": 460,
+        "x": 1510,
+        "y": 560,
         "wires": [
             []
         ]
@@ -3699,5 +3698,23 @@
                 "a09ffe797d8b3f3c"
             ]
         ]
+    },
+    {
+        "id": "64bb6376105a17ad",
+        "type": "debug",
+        "z": "3f247e8940433129",
+        "g": "b1d0c0de7a5e0001",
+        "name": "custom - watchdog",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1370,
+        "y": 320,
+        "wires": []
     }
 ]
