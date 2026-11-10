@@ -12,7 +12,13 @@
 
 Il permet de collecter les informations transmises par la sortie Téléinformation Client (TIC), puis de les rendre disponibles pour leur consultation, leur traitement ou leur intégration dans un système domotique.
 
-[![Dashboard Screenshot](https://github.com/dknr-domotic/dknr-teleinfo/blob/master/dknr-teleinfo_screenshot.png)](https://github.com/dknr-domotic/dknr-teleinfo/blob/master/dknr-teleinfo_screenshot.png)
+[![Dashboard Screenshot detail](https://github.com/dknr-domotic/dknr-teleinfo/blob/master/sshot/dknr-teleinfo_screenshot.png)](https://github.com/dknr-domotic/dknr-teleinfo/blob/master/sshot/dknr-teleinfo_screenshot.png)
+
+[![Dashboard Screenshot history](https://github.com/dknr-domotic/dknr-teleinfo/blob/master/sshot/dknr-teleinfo_screenshot2.png)](https://github.com/dknr-domotic/dknr-teleinfo/blob/master/sshot/dknr-teleinfo_screenshot2.png)
+
+[![Dashboard Screenshot add](https://github.com/dknr-domotic/dknr-teleinfo/blob/master/sshot/dknr-teleinfo_screenshot3.png)](https://github.com/dknr-domotic/dknr-teleinfo/blob/master/sshot/dknr-teleinfo_screenshot3.png)
+
+[![Dashboard Screenshot mqtt](https://github.com/dknr-domotic/dknr-teleinfo/blob/master/sshot/dknr-teleinfo_screenshot4.png)](https://github.com/dknr-domotic/dknr-teleinfo/blob/master/sshot/dknr-teleinfo_screenshot4.png)
 
 
 ## Fonctionnalités
